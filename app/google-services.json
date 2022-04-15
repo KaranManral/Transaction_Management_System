@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "551315540597",
+    "project_id": "apna-bank-41175",
+    "storage_bucket": "apna-bank-41175.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551315540597:android:bc6891c6e6394b6b9d463c",
+        "android_client_info": {
+          "package_name": "com.example.apnabank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551315540597-fr4kph4s0ffg3nen3apggu29d4mq5hms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiUUqLRjSqAPA3w_6zLAbhIe6dX3bOHZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551315540597-fr4kph4s0ffg3nen3apggu29d4mq5hms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
