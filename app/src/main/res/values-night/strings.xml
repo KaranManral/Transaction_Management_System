@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Apna Bank</string>
     <string name="apna_bank">APNA BANK</string>
     <string name="mpin1"><u>MPIN</u></string>
     <string name="user_id1"><u>User-ID</u></string>
@@ -7,4 +8,8 @@
     <string name="user_id">User-ID</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="transfer">Transfer</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="transfer1"><u>Transfer</u></string>
+    <string name="withdraw1"><u>Withdraw</u></string>
 </resources>

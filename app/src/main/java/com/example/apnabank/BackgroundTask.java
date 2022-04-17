@@ -1,10 +1,7 @@
 package com.example.apnabank;
 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
-import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -18,29 +15,19 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class LoginTask extends AsyncTask<String,Void,String> {
+public class BackgroundTask extends AsyncTask<String,Void,String> {
 
-    AlertDialog dialog;
+    String result = "";
     Context context;
-    String result = "",pan;
-    public LoginTask(Context context)
-    {
+
+    public BackgroundTask(Context context) {
         this.context = context;
-    }
-    @Override
-    protected void onPreExecute() {
-        dialog = new AlertDialog.Builder(context).create();
-        dialog.setMessage("Signing In");
-        dialog.setCanceledOnTouchOutside(false);
-        dialog.show();
     }
 
     @Override
     protected String doInBackground(String... strings) {
-        pan = strings[0];
-        String uid = strings[1];
-        String pwd = strings[2];
-        String connect = "https://dusc.000webhostapp.com/index.php";
+        String connect = strings[0];
+        String query = strings[1];
         try {
             URL url = new URL(connect);
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
@@ -52,7 +39,7 @@ public class LoginTask extends AsyncTask<String,Void,String> {
 
             OutputStream ops = con.getOutputStream();
             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(ops,"UTF-8"));
-            String data = URLEncoder.encode("pan","UTF-8")+"="+URLEncoder.encode(pan,"UTF-8")+"&"+URLEncoder.encode("uid","UTF-8")+"="+URLEncoder.encode(uid,"UTF-8")+"&"+URLEncoder.encode("pwd","UTF-8")+"="+URLEncoder.encode(pwd,"UTF-8");
+            String data = URLEncoder.encode("query","UTF-8")+"="+URLEncoder.encode(query,"UTF-8");
             writer.write(data);
             writer.flush();
             writer.close();
@@ -75,18 +62,5 @@ public class LoginTask extends AsyncTask<String,Void,String> {
             result = e.getMessage();
         }
         return result;
-    }
-
-    @Override
-    protected void onPostExecute(String s) {
-        dialog.dismiss();
-        if(result.equals("true"))
-        {
-            Intent intent = new Intent(context,HomeScreen.class);
-            intent.putExtra("pan",pan);
-            context.startActivity(intent);
-        }
-        else
-            Toast.makeText(context, "Login Failed: Enter correct Details", Toast.LENGTH_LONG).show();
     }
 }

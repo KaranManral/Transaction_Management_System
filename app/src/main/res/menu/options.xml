@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/logout"
+        android:title=""
+        android:icon="@drawable/ic_baseline_power_settings_new_24"
+        app:showAsAction="always"/>
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        app:showAsAction="never" />
+    <item android:id="@+id/transaction"
+        android:title="Transactions"
+        app:showAsAction="never"/>
+    <item android:id="@+id/deposit"
+        android:title="Deposit"
+        app:showAsAction="never"/>
+    <item android:id="@+id/withdraw"
+        android:title="Withdraw"
+        app:showAsAction="never"/>
+</menu>

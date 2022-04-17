@@ -3,11 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1235" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/drawable/ic_bank.xml" value="0.1985" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/drawable/ic_baseline_power_settings_new_24.xml" value="0.1235" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1235" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/drawable/ll_border.xml" value="0.1235" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/drawable/splash_background.xml" value="0.109" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/layout/activity_deposit.xml" value="0.20811965811965813" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/layout/activity_home_screen.xml" value="0.17798913043478262" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/layout/activity_load.xml" value="0.1" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/layout/activity_login_screen.xml" value="0.26621847886098404" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/layout/activity_main.xml" value="0.26621847886098404" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/layout/activity_profile.xml" value="0.20168066580377575" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/layout/activity_transaction.xml" value="0.1" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/layout/activity_withdraw.xml" value="0.20811965811965813" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ApnaBank/app/src/main/res/menu/options.xml" value="0.20811965811965813" />
       </map>
     </option>
   </component>
