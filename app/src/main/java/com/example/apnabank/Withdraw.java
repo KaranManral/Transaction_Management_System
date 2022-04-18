@@ -117,8 +117,10 @@ public class Withdraw extends AppCompatActivity {
             Toast.makeText(this, "Select valid account number", Toast.LENGTH_SHORT).show();
         else if(tamt.getText().toString().equals(""))
             Toast.makeText(this, "Enter valid amount", Toast.LENGTH_SHORT).show();
-        else if(Double.parseDouble(tamt.getText().toString())<=100)
-            Toast.makeText(this, "Enter an amount more than Rs 100", Toast.LENGTH_SHORT).show();
+        else if(Double.parseDouble(tamt.getText().toString())<100)
+            Toast.makeText(this, "Enter an amount more than Rs 99", Toast.LENGTH_SHORT).show();
+        else if(Double.parseDouble(tamt.getText().toString())>100000)
+            Toast.makeText(this, "Enter an amount less than Rs 100001", Toast.LENGTH_SHORT).show();
         else
         {
             String yourAccNO=selectyourAccount.getSelectedItem().toString();
@@ -245,8 +247,10 @@ public class Withdraw extends AppCompatActivity {
             Toast.makeText(this, "Select valid account number", Toast.LENGTH_SHORT).show();
         else if(wamt.getText().toString().equals(""))
             Toast.makeText(this, "Enter valid amount", Toast.LENGTH_SHORT).show();
-        else if(Double.parseDouble(wamt.getText().toString())<=100)
-            Toast.makeText(this, "Enter a withdraw amount more than Rs 100", Toast.LENGTH_SHORT).show();
+        else if(Double.parseDouble(wamt.getText().toString())<100)
+            Toast.makeText(this, "Enter a withdraw amount more than Rs 99", Toast.LENGTH_SHORT).show();
+        else if(Double.parseDouble(tamt.getText().toString())>100000)
+            Toast.makeText(this, "Enter an amount less than Rs 100001", Toast.LENGTH_SHORT).show();
         else
         {
             String accNO=selectAccount.getSelectedItem().toString();

@@ -48,9 +48,11 @@ public class Deposit extends AppCompatActivity {
                 if(selectAccount.getSelectedItem().toString().equals("Select Account"))
                     Toast.makeText(Deposit.this, "Select valid account to deposit", Toast.LENGTH_SHORT).show();
                 else if(amount.getText().toString().equals(""))
-                    Toast.makeText(Deposit.this, "Enter valid amount i.e more than 100", Toast.LENGTH_SHORT).show();
-                else  if(Double.parseDouble(amount.getText().toString())<=100.0)
-                    Toast.makeText(Deposit.this, "Enter valid amount i.e more than 100", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Deposit.this, "Enter valid amount", Toast.LENGTH_SHORT).show();
+                else  if(Double.parseDouble(amount.getText().toString())<100.0)
+                    Toast.makeText(Deposit.this, "Enter valid amount more than 99", Toast.LENGTH_SHORT).show();
+                else  if(Double.parseDouble(amount.getText().toString())>100000.0)
+                    Toast.makeText(Deposit.this, "Enter valid amount less than 100001", Toast.LENGTH_SHORT).show();
                 else if((cno.getText().toString()).length()!=12)
                     Toast.makeText(Deposit.this, "Enter correct card number", Toast.LENGTH_SHORT).show();
                 else if((cvv.getText().toString()).length()!=3)
